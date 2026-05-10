@@ -13,9 +13,7 @@
 
 ## 🎬 Preview
 
-<video src="VIDEO_URL_HERE" controls width="320"></video>
-
-> 💡 **วิธีใส่วิดีโอ:** อัปโหลดไฟล์ `preview.MP4` ผ่าน GitHub (drag & drop ใน issue/README editor) แล้วแทนที่ `VIDEO_URL_HERE` ด้วย URL ที่ขึ้นต้น `https://github.com/user-attachments/assets/...` ที่ GitHub สร้างให้
+https://github.com/user-attachments/assets/e04ae297-31b1-4486-9e1c-81ed0e5aac34
 
 ---
 
@@ -32,28 +30,26 @@
 
 ## 📱 Screenshots
 
-<table>
-  <tr>
-    <td align="center"><b>Splash Screen</b></td>
-    <td align="center"><b>หน้ารายการร้าน</b></td>
-    <td align="center"><b>รายละเอียดร้าน</b></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/534a8ec8-03ce-4230-9bb5-e089ea9cf0df" width="240" /></td>
-    <td><img src="https://github.com/user-attachments/assets/0ee3a64b-181b-461e-96f5-195147ae3a6b" width="240" /></td>
-    <td><img src="https://github.com/user-attachments/assets/2c3100fb-4773-422f-b1ca-a0491dff9000" width="240" /></td>
-  </tr>
-  <tr>
-    <td align="center"><b>แผนที่ร้าน</b></td>
-    <td align="center"><b>การโทรหาร้าน</b></td>
-    <td align="center"></td>
-  </tr>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/db379b6e-3304-49b8-92e7-5594f9018c56" width="240" /></td>
-    <td><img src="https://github.com/user-attachments/assets/9615031a-90ca-4f15-b517-6f2023108d66" width="240" /></td>
-    <td></td>
-  </tr>
-</table>
+<p align="center">
+  <table align="center">
+    <tr>
+      <td align="center"><b>Splash Screen</b></td>
+      <td align="center"><b>หน้ารายการร้าน</b></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://github.com/user-attachments/assets/9615031a-90ca-4f15-b517-6f2023108d66" width="240" /></td>
+      <td align="center"><img src="https://github.com/user-attachments/assets/534a8ec8-03ce-4230-9bb5-e089ea9cf0df" width="240" /></td>
+    </tr>
+    <tr>
+      <td align="center"><b>รายละเอียดร้าน</b></td>
+      <td align="center"><b>แผนที่ร้าน</b></td>
+    </tr>
+    <tr>
+      <td align="center"><img src="https://github.com/user-attachments/assets/0ee3a64b-181b-461e-96f5-195147ae3a6b" width="240" /></td>
+      <td align="center"><img src="https://github.com/user-attachments/assets/db379b6e-3304-49b8-92e7-5594f9018c56" width="240" /></td>
+    </tr>
+  </table>
+</p>
 
 ---
 
