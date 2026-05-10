@@ -13,7 +13,9 @@
 
 ## 🎬 Preview
 
-https://github.com/user-attachments/assets/e04ae297-31b1-4486-9e1c-81ed0e5aac34
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/e04ae297-31b1-4486-9e1c-81ed0e5aac34" controls width="320"></video>
+</div>
 
 ---
 
@@ -138,9 +140,6 @@ npx expo start
 
 ---
 
-## 📝 License
-
-MIT — Free to use for educational purposes
 
 ---
 
@@ -149,7 +148,7 @@ MIT — Free to use for educational purposes
 **Chanathip Chueycherm**
 Student ID: `6852D10005`
 
-> โปรเจกต์นี้เป็นส่วนหนึ่งของรายวิชา Mobile Application Development
+> โปรเจกต์นี้เป็นส่วนหนึ่งของรายวิชา การพัฒนาโปรแกรมประยุกต์ สำหรับอุปกร์เคลื่อนที่
 
 ---
 
