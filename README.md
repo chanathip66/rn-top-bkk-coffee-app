@@ -1,50 +1,162 @@
-# Welcome to your Expo app 👋
+# ☕ Top Bangkok Coffees
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> ค้นพบที่สุดของร้านกาแฟในกรุงเทพฯ — แอปพลิเคชันบนมือถือที่รวบรวมร้านกาแฟยอดนิยม พร้อมรายละเอียด แผนที่ และเบอร์ติดต่อ
 
-## Get started
+<p align="center">
+  <img src="https://img.shields.io/badge/React_Native-0.81-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React Native" />
+  <img src="https://img.shields.io/badge/Expo-54-000020?style=for-the-badge&logo=expo&logoColor=white" alt="Expo" />
+  <img src="https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Supabase-2.x-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white" alt="Supabase" />
+</p>
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🎬 Preview
 
-2. Start the app
+<video src="VIDEO_URL_HERE" controls width="320"></video>
 
-   ```bash
-   npx expo start
-   ```
+> 💡 **วิธีใส่วิดีโอ:** อัปโหลดไฟล์ `preview.MP4` ผ่าน GitHub (drag & drop ใน issue/README editor) แล้วแทนที่ `VIDEO_URL_HERE` ด้วย URL ที่ขึ้นต้น `https://github.com/user-attachments/assets/...` ที่ GitHub สร้างให้
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## ✨ Features
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- 🎨 **Splash Screen สวยงาม** — แสดงโลโก้ 3 วินาที พร้อม fade ไปหน้าหลักอัตโนมัติ
+- 📋 **รายการร้านกาแฟ** — ดึงข้อมูลจาก Supabase แบบ real-time แสดงเป็น Card UI
+- 🏠 **หน้ารายละเอียด** — รูปภาพ, คำอธิบาย, เขตที่ตั้ง
+- 📞 **โทรหาร้านได้ทันที** — กดปุ่มเดียวเปิด dialer
+- 🗺️ **แผนที่ปักหมุด** — ใช้ `react-native-maps` แสดงตำแหน่ง พร้อมเปิด Google Maps / Apple Maps
+- 🅰️ **Font Kanit** — ตัวอักษรไทยสวยงามทั้งแอป
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📱 Screenshots
 
-```bash
-npm run reset-project
+<table>
+  <tr>
+    <td align="center"><b>Splash Screen</b></td>
+    <td align="center"><b>หน้ารายการร้าน</b></td>
+    <td align="center"><b>รายละเอียดร้าน</b></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/534a8ec8-03ce-4230-9bb5-e089ea9cf0df" width="240" /></td>
+    <td><img src="https://github.com/user-attachments/assets/0ee3a64b-181b-461e-96f5-195147ae3a6b" width="240" /></td>
+    <td><img src="https://github.com/user-attachments/assets/2c3100fb-4773-422f-b1ca-a0491dff9000" width="240" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>แผนที่ร้าน</b></td>
+    <td align="center"><b>การโทรหาร้าน</b></td>
+    <td align="center"></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/db379b6e-3304-49b8-92e7-5594f9018c56" width="240" /></td>
+    <td><img src="https://github.com/user-attachments/assets/9615031a-90ca-4f15-b517-6f2023108d66" width="240" /></td>
+    <td></td>
+  </tr>
+</table>
+
+---
+
+## 🛠️ Tech Stack
+
+| หมวด | เทคโนโลยี |
+|---|---|
+| **Framework** | React Native 0.81 + Expo 54 |
+| **Language** | TypeScript 5.9 |
+| **Routing** | Expo Router (file-based) |
+| **Backend** | Supabase (PostgreSQL + Storage + RLS) |
+| **Map** | react-native-maps |
+| **Font** | Kanit (Google Fonts) |
+| **Image** | expo-image |
+
+---
+
+## 📂 Project Structure
+
+```
+rn-top-bkk-coffee-app/
+├── app/
+│   ├── _layout.tsx        # Root Stack + Font loader + SplashScreen
+│   ├── index.tsx          # Splash screen (3s → /home)
+│   ├── home.tsx           # Coffee shop list (FlatList)
+│   └── detail.tsx         # Detail + Map + Phone
+├── services/
+│   └── supabase.ts        # Supabase client config
+├── assets/
+│   └── images/
+│       └── coffeeshop.png # App logo
+├── types.ts               # CoffeeShop type
+└── package.json
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🗄️ Database Schema
 
-To learn more about developing your project with Expo, look at the following resources:
+ตาราง `coffee_shops_tb` บน Supabase:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+| Column | Type | Description |
+|---|---|---|
+| `id` | uuid | Primary key |
+| `name` | text | ชื่อร้าน |
+| `district` | text | เขต/ย่าน |
+| `description` | text | รายละเอียด |
+| `image_url` | text | URL รูปภาพ (จาก Storage bucket `coffee_shops_bk`) |
+| `phone` | text | เบอร์โทร |
+| `latitude` | float8 | ละติจูด |
+| `longitude` | float8 | ลองจิจูด |
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🚀 Getting Started
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### 1️⃣ Clone repository
+
+```bash
+git clone https://github.com/chanathip66/rn-top-bkk-coffee-app.git
+cd rn-top-bkk-coffee-app
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ ตั้งค่า Supabase
+
+แก้ไฟล์ `services/supabase.ts` ใส่ค่า Project URL และ anon key ของคุณ:
+
+```ts
+const SUPABASE_URL = "https://YOUR_PROJECT.supabase.co";
+const SUPABASE_ANON_KEY = "YOUR_ANON_KEY";
+```
+
+### 4️⃣ Run
+
+```bash
+npx expo start
+```
+
+แล้วสแกน QR ด้วยแอป **Expo Go** บนมือถือ
+
+---
+
+## 📝 License
+
+MIT — Free to use for educational purposes
+
+---
+
+## 👨‍💻 Author
+
+**Chanathip Chueycherm**
+Student ID: `6852D10005`
+
+> โปรเจกต์นี้เป็นส่วนหนึ่งของรายวิชา Mobile Application Development
+
+---
+
+<p align="center">
+  Made with ☕ in Bangkok
+</p>
